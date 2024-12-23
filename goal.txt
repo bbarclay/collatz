@@ -1,0 +1,28 @@
+% ...existing code...
+CORE MISSION: PATTERN DISCOVERY
+
+Primary Objective:
+Discover new structural patterns in Collatz sequences that might reveal
+deeper mathematical relationships governing the conjecture.
+
+Investigation Framework:
+1. Focus on pattern discovery, not proof validation
+2. Look for self-similar structures and recurring patterns
+3. Study relationship networks between numbers
+4. Map trajectory families and their properties
+
+Critical Rules:
+1. Never use 1 or even numbers as starting values
+2. Document ALL patterns, even if they seem insignificant
+3. Look for connections between seemingly unrelated patterns
+4. Focus on structural relationships over individual numbers
+
+Success Metrics:
+1. New pattern discoveries
+2. Unexplained regularities
+3. Novel relationship structures
+4. Potential invariant properties
+
+Remember: We're not trying to prove the conjecture directly.
+We're mapping its underlying structure through pattern discovery.
+% ...existing code...
