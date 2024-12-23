@@ -25,4 +25,12 @@ Success Metrics:
 
 Remember: We're not trying to prove the conjecture directly.
 We're mapping its underlying structure through pattern discovery.
+
+Test File Creation and JSON Storage:
+1. The command should create `test_1`, `test_2`, and `test_3` directories.
+2. Each directory should contain core files: `test.py`, `raw.json`, and `results.json`.
+3. The `test.py` file should be executable and contain initial test code.
+4. The `raw.json` file should store raw data in JSON format.
+5. The `results.json` file should store high-level overview information in JSON format.
+6. The command should log the creation process and provide next steps for the user.
 % ...existing code...

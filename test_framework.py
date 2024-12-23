@@ -47,3 +47,27 @@ class TestFramework:
             results.append(result)
         self.store_results(results)
         return results
+
+    def create_test_files(self):
+        test_dirs = ['test_1', 'test_2', 'test_3']
+        for test_dir in test_dirs:
+            os.makedirs(test_dir, exist_ok=True)
+            with open(os.path.join(test_dir, 'test.py'), 'w') as file:
+                file.write("# Test file for {}\n".format(test_dir))
+            with open(os.path.join(test_dir, 'raw.json'), 'w') as file:
+                json.dump({}, file)
+            with open(os.path.join(test_dir, 'results.json'), 'w') as file:
+                json.dump({}, file)
+            with open(os.path.join(test_dir, 'hypothesis.tex'), 'w') as file:
+                file.write(f"Hypothesis for {test_dir}\n")
+
+    def enforce_conditions(self, number):
+        if number == 1 or number % 2 == 0:
+            raise ValueError("Collatz sequence cannot start with 1 or an even number.")
+        return number
+
+    def create_hypothesis_files(self):
+        test_dirs = ['test_1', 'test_2', 'test_3']
+        for test_dir in test_dirs:
+            with open(os.path.join(test_dir, 'hypothesis.tex'), 'w') as file:
+                file.write(f"Hypothesis for {test_dir}\n")
